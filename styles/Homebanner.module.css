@@ -1,0 +1,58 @@
+.homeBanner {
+  position: relative;
+  width: 100%;
+  height: 100vh; /* Full screen height */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.backgroundVideo,
+.placeholderImage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.homeBannerContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1600px;
+  width: 100%;
+  padding: 2rem;
+  color: white;
+  z-index: 1;
+}
+
+.column {
+  flex: 1;
+}
+
+h1.bannerHeadering {
+  font-size: 4rem;
+  line-height: 1.15;
+  margin-bottom: 2rem;
+}
+.headingText {
+  line-height: 1.5;
+}
+.ctaButton {
+  background-color: #ff6600;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  font-size: 18px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+.ctaButton:hover {
+  background-color: #cc5500;
+}
