@@ -1,0 +1,37 @@
+.sliderWrapper {
+  overflow: hidden;
+  width: 100%;
+  white-space: nowrap;
+  position: relative;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  background: #989898;
+}
+
+.slideTrack {
+  display: flex;
+  width: fit-content;
+  animation: scroll 40s linear infinite;
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.logo {
+  height: 50px; /* Adjust logo height */
+  margin-right: 30px;
+  object-fit: contain;
+  filter: grayscale(100%); /* Make logos black & white */
+  transition: filter 0.3s ease-in-out;
+}
+
+.logo:hover {
+  filter: grayscale(0%); /* Show original color on hover */
+}
