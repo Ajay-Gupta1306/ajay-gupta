@@ -4,7 +4,7 @@ import styles from "@/styles/projectlogo.module.css";
 const logos = [
   "/client-logo/nomwom.avif",
   "/client-logo/ordercup.png",
-  "/client-logo/suhino.webp",
+  "/client-logo/Suhino.webp",
   "/client-logo/trumatter.png",
   "/client-logo/essencestudios.png",
   "/client-logo/chessbazaar.avif",
