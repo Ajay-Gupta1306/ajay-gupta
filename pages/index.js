@@ -1,9 +1,10 @@
 import Head from "next/head";
 
 import Header from "@/components/Common/Header";
-import Footer from "@/components/Common/Footer";
 import Homebanner from "@/components/HomeBanner";
+import Services from "@/components/Services";
 import ProjectLogo from "@/components/ProjectsLogos";
+import Footer from "@/components/Common/Footer";
 
 export default function Home() {
   return (
@@ -22,6 +23,7 @@ export default function Home() {
       <Header />
       <Homebanner />
       <ProjectLogo />
+      <Services />
       <Footer />
     </>
   );

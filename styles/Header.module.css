@@ -12,6 +12,7 @@
   z-index: 1000;
 }
 
+/* Logo styling */
 .logoContainer {
   display: flex;
   align-items: center;
@@ -19,6 +20,7 @@
   font-weight: bold;
 }
 
+/* Fade-in animation */
 .fadeIn {
   opacity: 0;
   transform: translateY(-10px);
@@ -36,17 +38,13 @@
   }
 }
 
-.a,
-.g {
-  margin-left: 5px;
-  font-size: 24px;
-  font-weight: bold;
-}
-
+/* Navigation styles */
 .nav ul {
   display: flex;
   list-style: none;
   gap: 20px;
+  padding: 0;
+  margin: 0;
 }
 
 .nav ul li {
@@ -67,16 +65,32 @@
   animation-delay: 1.6s;
 }
 
+/* Navigation link styling */
 .nav ul li a {
   color: white;
   text-decoration: none;
   font-size: 18px;
+  position: relative;
+  transition: color 0.3s ease-in-out;
+  padding-bottom: 5px;
+}
+
+/* Underline effect */
+.nav ul li a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  width: 0;
+  height: 2px;
+  background-color: var(--purple);
+  transition: width 0.3s ease-in-out;
 }
 
 .nav ul li a:hover {
-  text-decoration: underline;
+  color: var(--purple);
 }
 
-.hidden {
-  display: none;
+.nav ul li a:hover::after {
+  width: 100%;
 }

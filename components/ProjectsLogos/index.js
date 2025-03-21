@@ -12,7 +12,6 @@ const logos = [
   "/client-logo/atlassian.svg",
   "/client-logo/gig.png",
   "/client-logo/adk.webp",
-  "/client-logo/jk.png",
   "/client-logo/jubinavchadha.webp",
 ];
 

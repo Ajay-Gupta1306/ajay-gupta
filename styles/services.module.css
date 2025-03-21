@@ -1,0 +1,118 @@
+.servicesContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5rem 2rem;
+}
+
+.servicesWrapper {
+  display: flex;
+  gap: 3rem;
+  max-width: 1600px;
+  width: 100%;
+}
+
+.servicesAccordion {
+  flex: 1;
+}
+
+.accordionItem {
+  padding: 0 0 2rem 0;
+}
+.accordionItem:last-child {
+  padding: 0;
+}
+.servicesAccordionTitle {
+  background: none;
+  border: none;
+  font-size: 18px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  padding: 10px 0;
+  width: 100%;
+  text-align: left;
+  color: var(--black);
+  font-size: 2rem;
+  position: relative;
+  transition: color 0.3s ease;
+  display: inline-block;
+  padding-left: 80px;
+}
+.servicesAccordionTitle[aria-expanded="true"] {
+  color: var(--purple);
+}
+.servicesAccordionTitle .accordionTitle::after {
+  content: "";
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: purple;
+  transition: width 0.3s ease-in-out;
+}
+.accordionTitle {
+  position: relative;
+}
+.servicesAccordionTitle:hover .accordionTitle {
+  color: var(--purple);
+}
+.servicesAccordionTitle:hover .accordionTitle::after {
+  width: 100%;
+}
+.serviceNumber {
+  font-weight: bold;
+  color: #d6d6d6; /* Custom color for numbers */
+  font-size: 2rem;
+  position: absolute;
+  left: 0;
+}
+.serviceNumber::after {
+  content: "";
+  position: absolute;
+  left: calc(100% + 10px);
+  height: 2px;
+  background-color: #c7c7c7;
+  width: 30px;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.servicesAccordionContent {
+  padding: 10px 0;
+  padding-left: 80px;
+}
+
+.tagsWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  margin-bottom: 10px;
+}
+
+.tag {
+  background: var(--lightblue);
+  font-size: 16px;
+  line-height: 40px;
+  margin-right: 10px;
+  padding: 0 16px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+.servicesImageContainer {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.servicesImage {
+  border-radius: 10px;
+  max-width: 100%;
+  height: auto;
+}
