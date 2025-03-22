@@ -4,6 +4,8 @@ import Header from "@/components/Common/Header";
 import Homebanner from "@/components/HomeBanner";
 import Services from "@/components/Services";
 import ProjectLogo from "@/components/ProjectsLogos";
+import Technologies from "@/components/Technologies";
+import Testimonials from "@/components/Testimonials";
 import Footer from "@/components/Common/Footer";
 
 export default function Home() {
@@ -24,6 +26,8 @@ export default function Home() {
       <Homebanner />
       <ProjectLogo />
       <Services />
+      <Technologies />
+      <Testimonials />
       <Footer />
     </>
   );

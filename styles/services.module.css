@@ -51,7 +51,7 @@
   left: 0;
   width: 0;
   height: 2px;
-  background-color: purple;
+  background-color: var(--purple);
   transition: width 0.3s ease-in-out;
 }
 .accordionTitle {
@@ -96,14 +96,17 @@
 
 .tag {
   background: var(--lightblue);
-  font-size: 16px;
-  line-height: 40px;
+  font-size: 12px;
+  line-height: 3;
   margin-right: 10px;
-  padding: 0 16px;
+  padding: 0 10px;
   margin-bottom: 10px;
   border-radius: 5px;
+  cursor: pointer;
 }
-
+.tag:hover {
+  color: var(--purple);
+}
 .servicesImageContainer {
   flex: 1;
   display: flex;
